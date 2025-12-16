@@ -1,0 +1,42 @@
+{
+    "collectionName": "components_components_content_blocks",
+    "info": {
+        "displayName": "content-block"
+    },
+    "options": {},
+    "attributes": {
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ]
+        },
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "category": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text",
+            "required": true
+        },
+        "button_label": {
+            "type": "string",
+            "required": true
+        },
+        "button_URL": {
+            "type": "string",
+            "required": true
+        },
+        "flip_image_with_text": {
+            "type": "boolean",
+            "required": true,
+            "default": false
+        }
+    },
+    "config": {}
+}

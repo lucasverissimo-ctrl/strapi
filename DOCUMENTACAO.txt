@@ -1,0 +1,11 @@
+Quando for criar um novo field em um Syngle Type, sempre adicionar um Dynamic Zone e marcar required, nunca outro campo.
+
+fetch página slug (Page)
+/api/pages?locale=en&filters%5Bslug%5D%5B%24eq%5D=about-us&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.hero%5D%5Bpopulate%5D%5Bbackground_image%5D=true&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.content-block%5D%5Bpopulate%5D%5Bimage%5D=true&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.carousel%5D%5Bpopulate%5D%5Bslides%5D%5Bpopulate%5D%5B0%5D=image
+
+/api/pages?locale=en&filters[slug][$eq]=about-us&populate[components][on][components.hero][populate][background_image]=true&populate[components][on][components.content-block][populate][image]=true&populate[components][on][components.carousel][populate][slides][populate][0]=image
+
+fetch página (Patria)
+/api/patrias?locale=en&filters%5Bslug%5D%5B%24eq%5D=about-us&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.hero%5D%5Bpopulate%5D%5Bbackground_image%5D=true&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.content-block%5D%5Bpopulate%5D%5Bimage%5D=true&populate%5Bcomponents%5D%5Bon%5D%5Bcomponents.carousel%5D%5Bpopulate%5D%5Bslides%5D%5Bpopulate%5D%5B0%5D=image
+
+/api/patrias?locale=en&filters[slug][$eq]=about-us&populate[components][on][components.hero][populate][background_image]=true&populate[components][on][components.content-block][populate][image]=true&populate[components][on][components.carousel][populate][slides][populate][0]=image

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_contents",
+  "info": {
+    "displayName": "contents"
+  },
+  "options": {},
+  "attributes": {
+    "contents": {
+      "type": "component",
+      "component": "components.content-block",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

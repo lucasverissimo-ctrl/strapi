@@ -1,0 +1,28 @@
+@if (data) {
+  <div class="contact-form-block">
+    <div class="contact-form-block__wrapper">
+      <div class="contact-form-block__info">
+        <h1 class="contact-form-block__title">{{ data.title }}</h1>
+        <h2 class="contact-form-block__subtitle">{{ data.subtitle }}</h2>
+        <p class="contact-form-block__description">{{ data.description }}</p>
+      </div>
+      <div class="contact-form-block__form-container">
+        <form [action]="data.form_action" method="POST" class="contact-form-block__form">
+          @for (item of data.inputs; track $index) {
+            <app-form-input [data]="item"></app-form-input>
+          }
+          <button class="contact-form-block__submit-button" type="submit">{{ data.submit_button_label }}</button>
+        </form>
+      </div>
+      <!-- <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form> -->
+    </div>
+  </div>
+}

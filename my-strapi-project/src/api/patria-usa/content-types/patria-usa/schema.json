@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patria_usas",
+  "info": {
+    "singularName": "patria-usa",
+    "pluralName": "patria-usas",
+    "displayName": "Patria (USA)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "components": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "components.hero",
+        "components.contents",
+        "components.content-block",
+        "components.carousel",
+        "components.carousel-slide"
+      ],
+      "required": true,
+      "min": 1
+    }
+  }
+}

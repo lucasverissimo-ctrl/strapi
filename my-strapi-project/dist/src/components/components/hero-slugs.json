@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_components_hero_slugs",
+    "info": {
+        "displayName": "hero-slugs"
+    },
+    "options": {},
+    "attributes": {
+        "paths": {
+            "type": "json",
+            "required": true
+        }
+    },
+    "config": {}
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AngularFrontend</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="preload" href="assets/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin> -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!-- loader mostrado antes do Angular inicializar -->
+  <div id="app-loading" style="
+    position: fixed;
+    inset: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: #ffffff;
+    z-index: 99999;
+  ">
+    <div style="text-align:center">
+      <div style="font-size:18px; margin-bottom:8px">Carregando…</div>
+      <img src="assets/images/loading.gif" alt="Loading" style="width:64px; height:64px" />
+    </div>
+  </div>
+
+  <app-root></app-root>
+</body>
+</html>

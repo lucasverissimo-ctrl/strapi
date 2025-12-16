@@ -1,0 +1,50 @@
+{
+    "data": {
+        "id": 2,
+        "documentId": "spiwl91npdm5ygrg2z1n38t0",
+        "createdAt": "2025-08-26T17:54:49.969Z",
+        "updatedAt": "2025-08-26T18:18:03.692Z",
+        "publishedAt": "2025-08-26T18:18:03.766Z",
+        "hero": {
+            "id": 2,
+            "title": "Crafting unique investment opportunities for our clients.",
+            "text_button": "Learn more",
+            "URL_button": "https://patria.com/about-us/"
+        },
+        "content": [
+            {
+                "id": 4,
+                "category": null,
+                "title": "Credit Suisse sells REIT business in Brazil to Patria for around $130 mln",
+                "description": "Credit Suisse said on Wednesday it reached a deal to sell its real estate fund management business in Brazil to asset manager Patria Investments for up to 650 million reais (around $130 million)",
+                "text_button": "Read more",
+                "URL_button": "https://patria.com/knowledge/credit-suisse-sells-reit-business-in-brazil-to-patria-for-around-130mln/",
+                "text_on_the_left": false
+            },
+            {
+                "id": 5,
+                "category": null,
+                "title": "Patria gets multilateral support for new infrastructure fund",
+                "description": "Brazilian investment firm Pátria Investimentos has raised 20% of a new BRL5 billion ($1 billion) infrastructure fund with contributions from development banks, pension funds and multilateral lenders.",
+                "text_button": "Read more",
+                "URL_button": "https://patria.com/knowledge/patria-gets-multilateral-support-for-new-infrastructure-fund/",
+                "text_on_the_left": true
+            },
+            {
+                "id": 6,
+                "category": "MACROECONOMIC ONE PAGER",
+                "title": "A few intriguing long-term trends",
+                "description": "The countdown to the beginning of the cycle of monetary easing in advanced economies, starting with the U.S., continues. Downbeat economic data or signs of lower consumer inflation improve market sentiment and investors place bets on more ambitious rate cuts happening earlier in the year, whereas reports in the opposite direction undermine asset prices.",
+                "text_button": "Read more",
+                "URL_button": "https://patria.com/knowledge/a-few-intriguing-long-term-trends/",
+                "text_on_the_left": false
+            }
+        ],
+        "carousel": {
+            "id": 2,
+            "title": "Our business",
+            "description": "A wide range of sophisticated solutions. Explore our various areas of expertise"
+        }
+    },
+    "meta": {}
+}

@@ -1,0 +1,35 @@
+.text-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--title {
+    font-size: 52px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    color: #001EAF;
+  }
+
+  &--description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: center;
+    max-width: 793px;
+  }
+
+  &--button {
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #001EAF;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    min-width: 168px;
+    text-align: center;
+  }
+}

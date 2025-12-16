@@ -1,0 +1,19 @@
+@if (blocks && blocks.components) {
+<div>
+  @for (block of blocks.components; track block.id) {
+    @switch (block.__component) {
+      @case ("components.hero") {
+        <app-block-hero [data]="block"></app-block-hero>
+      } @case ("components.content-block") {
+        <app-block-highlights [data]="block"></app-block-highlights>
+      } @case ("components.hero-slugs") {
+        <app-block-hero-slugs [data]="block"></app-block-hero-slugs>
+      } @case ("components.contact-form") {
+        <app-block-contact-form [data]="block"></app-block-contact-form>
+      } @default {
+        <h1>Componente não cadastrado</h1>
+      }
+    }
+  }
+</div>
+}

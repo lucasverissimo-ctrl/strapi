@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consumindo Strapi</title>
+</head>
+<body>
+  <h1>Posts do CMS</h1>
+  <ul id="posts"></ul>
+
+  <script>
+    const API_URL = "https://uplifting-success-f5fc06adfc.strapiapp.com/api/home?populate[hero][populate]=background_image";
+
+    const API_TOKEN = "e93702c8cab8d360ae09cb3180046752470779989e8af2c24c174cc27f0f76bc28c6147954d83155b1aaf8154feb7cede3e3f47bca07c59a0ac7a52ff6edd87fb65ea2e7f50064547a9b8a0cd1dc9346df7dae8bdebf2a886043432cb43cb1194f1447c3c2b11971ce790f2bf8e62b9684a50b668c4196e38a8a4a2d56417ed5";
+
+    fetch(API_URL, {
+      headers: {
+        Authorization: `Bearer ${API_TOKEN}`
+      }
+    })
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("posts");
+        data.data.forEach(item => {
+          const li = document.createElement("li");
+          li.textContent = item.attributes.title;
+          list.appendChild(li);
+        });
+      })
+      .catch(err => console.error(err));
+  </script>
+</body>
+</html>

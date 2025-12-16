@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "patria_brs",
+  "info": {
+    "singularName": "patria-br",
+    "pluralName": "patria-brs",
+    "displayName": "Patria (BR)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "components": {
+      "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "components": [
+        "components.hero",
+        "components.contents",
+        "components.content-block",
+        "components.carousel",
+        "components.carousel-slide",
+        "components.contact-form",
+        "components.hero-slugs"
+      ],
+      "required": true,
+      "min": 1
+    }
+  }
+}

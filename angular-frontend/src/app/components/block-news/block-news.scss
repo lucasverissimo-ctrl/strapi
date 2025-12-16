@@ -1,0 +1,66 @@
+.block-news {
+  background-size: cover;
+  background-position: center;
+  padding: 31px 16px 64px;
+  position: relative;
+  margin-top: 64px;
+
+  &--title {
+    font-size: 52px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 0 0 45px;
+  }
+
+  &--see-all {
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 14px;
+    position: absolute;
+    top: 87px;
+    right: 86px;
+  }
+
+  &--cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &--card {
+    width: 388px;
+    height: 280px;
+    border: 1px solid #88AAFF;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--card-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: white;
+    letter-spacing: -0.72px;
+  }
+
+  &--read-more {
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+    text-align: left;
+    font-size: 14px;
+  }
+}

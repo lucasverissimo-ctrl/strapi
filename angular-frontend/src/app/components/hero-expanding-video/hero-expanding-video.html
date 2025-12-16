@@ -1,0 +1,30 @@
+<div class="hero-expanding-video" style="background-image: url('assets/images/patria-abstract-15.png')">
+  <div
+    class="hero-expanding-video-container"
+  >
+    <h1 class="hero-expanding-video__title">Headline with the Main Message</h1>
+    <div class="hero-expanding-video__content">
+      <div class="hero-expanding-video__text-content">
+        <p class="hero-expanding-video__text-content--title">XXXX</p>
+        <p class="hero-expanding-video__text-content--description">Lorem ipsum</p>
+      </div>
+      <div class="hero-expanding-video__text-content">
+        <p class="hero-expanding-video__text-content--title">XXXX</p>
+        <p class="hero-expanding-video__text-content--description">Lorem ipsum</p>
+      </div>
+      <div class="hero-expanding-video__text-content">
+        <p class="hero-expanding-video__text-content--title">XXXX</p>
+        <p class="hero-expanding-video__text-content--description">Lorem ipsum</p>
+      </div>
+      <div class="hero-expanding-video__text-content">
+        <p class="hero-expanding-video__text-content--title">XXXX</p>
+        <p class="hero-expanding-video__text-content--description">Lorem ipsum</p>
+      </div>
+    </div>
+    <div class="hero-expanding-video__video-container" #videoWrap>
+      <video #video [attr.poster]="thumbnail" [controls]="showControls" (click)="onPlay(video)" width="640">
+        <source [src]="videoUrl" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+</div>

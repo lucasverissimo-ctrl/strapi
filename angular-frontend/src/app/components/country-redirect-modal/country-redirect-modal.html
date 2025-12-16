@@ -1,0 +1,12 @@
+@if (visible && data) {
+<div class="crm-overlay">
+  <div class="crm-modal">
+    <h2>{{data.title}}</h2>
+    <p>{{data.description}}</p>
+    <div class="crm-actions">
+      <button (click)="stay()">{{data.stay_on_page_button_label}}</button>
+      <button (click)="go()" class="primary">{{data.go_button_label}}</button>
+    </div>
+  </div>
+</div>
+}

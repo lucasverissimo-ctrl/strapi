@@ -1,0 +1,48 @@
+.hero-slugs {
+  padding-top: 122px;
+  
+  &-container {
+    display: flex;
+  }
+
+  &-info {
+    width: 50%;
+    max-width: 598px;
+    margin-left: auto;
+  }
+
+  &-image {
+    width: 50%;
+  }
+
+  &-breadcrumb {
+    padding: 47px 0;
+
+    &-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    &-link:hover {
+      color: #0D0D38;
+    }
+
+    &-link:not(:last-child)::after {
+      content: '›';
+      margin: 0 0.5rem;
+      color: #666;
+      font-size: 0.9em;
+      vertical-align: middle;
+    }
+  }
+
+  &-title {
+    font-size: 48px;
+    line-height: 63px;
+    font-weight: 300;
+    max-width: 529px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+}

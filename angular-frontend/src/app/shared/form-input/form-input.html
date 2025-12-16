@@ -1,0 +1,21 @@
+@if (data.type === 'text') {
+  <div class="form-input">
+    <label class="form-input__label" [for]="data.name">{{ data.label }}</label>
+    <input class="form-input__input" type="text" [id]="data.name" [name]="data.name" placeholder=" " [required]="data.required" />
+  </div>
+} @else if (data.type === 'select') {
+  <div class="form-input">
+    <label class="form-input__label" [for]="data.name">{{ data.label }}</label>
+    <select class="form-input__select" [id]="data.name" [name]="data.name" [required]="data.required" placeholder=" ">
+      <option value="" disabled selected hidden></option>
+      @for (option of data.options; track $index) {
+        <option [value]="option.children">{{ option.label }}</option>
+      }
+    </select>
+  </div>
+} @else if (data.type === 'optin') {
+  <div class="form-input__optin">
+    <input class="form-input__checkbox" type="checkbox" [id]="data.name" [name]="data.name" [required]="data.required" />
+    <label class="form-input__optin-label" [for]="data.name">{{ data.label }}</label>
+  </div>
+}

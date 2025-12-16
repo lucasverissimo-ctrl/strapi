@@ -1,0 +1,59 @@
+.hero-expanding-video {
+  width: 100%;
+  min-height: 1294px;
+  display: flex;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: bottom;
+
+  &-container {
+    background-color: rgba(13, 12, 56, 0.7);
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+
+  &__video-container {
+    position: fixed;
+    top: calc(86px + 132px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+
+  &__title {
+    padding-top: calc(368px + 132px);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 84px;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 1016px;
+    margin: 8px auto 53px;
+    justify-content: space-between;
+  }
+
+  &__text-content {
+    &--title {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 42px;
+      line-height: 71px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    &--description {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}

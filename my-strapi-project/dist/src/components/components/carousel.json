@@ -1,0 +1,17 @@
+{
+    "collectionName": "components_components_carousels",
+    "info": {
+        "displayName": "carousel"
+    },
+    "options": {},
+    "attributes": {
+        "slides": {
+            "type": "component",
+            "component": "components.carousel-slide",
+            "repeatable": true,
+            "required": true,
+            "min": 1
+        }
+    },
+    "config": {}
+}

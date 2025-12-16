@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_components_contact_forms",
+  "info": {
+    "displayName": "contact-form"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "inputs": {
+      "type": "component",
+      "component": "atoms.inputs",
+      "repeatable": true,
+      "required": true
+    },
+    "submit_button_label": {
+      "type": "string",
+      "required": true
+    },
+    "form_action": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
