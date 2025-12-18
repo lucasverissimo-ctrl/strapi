@@ -31,13 +31,13 @@ export class HeroExpandingVideo implements AfterViewInit {
   @ViewChild('video', { static: true }) videoEl!: ElementRef<HTMLVideoElement>;
 
   videoUrl = 'assets/videos/patria_lancamento.mp4';
-  thumbnail = 'assets/videos/patria_lancamento.png';
+  thumbnail = 'assets/images/patria_lancamento.png';
 
   showControls = false;
   private readonly fixedTop = 86 + 132;
   private readonly startW = 640;
-  private max = 760;
-  private readonly endW = window.innerWidth;
+  private max = 800;
+  private readonly endW = document.documentElement.clientWidth;
   private removed = false;
 
   ngAfterViewInit() {
@@ -65,6 +65,8 @@ export class HeroExpandingVideo implements AfterViewInit {
         const topAbs = this.fixedTop + y - containerRect.top;
         el.style.position = 'static';
         el.style.transform = 'translate(0, 0)';
+        el.style.width = '100%';
+        this.videoEl.nativeElement.style.width = '100%';
         this.removed = true;
       }
     } else {
@@ -73,6 +75,8 @@ export class HeroExpandingVideo implements AfterViewInit {
         el.style.top = this.fixedTop + 'px';
         el.style.left = '50%';
         el.style.transform = 'translateX(-50%)';
+        el.style.width = 'auto';
+        this.videoEl.nativeElement.style.width = '100%';
         this.removed = false;
       }
     }

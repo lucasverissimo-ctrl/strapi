@@ -19,6 +19,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
+    display: flex;
   }
 
   &__title {
@@ -28,6 +29,7 @@
     font-size: 84px;
     font-weight: 100;
     margin: 0;
+    font-family: "TGHaidoGrotesk-Thin", Arial, sans-serif;
   }
 
   &__content {
@@ -45,6 +47,7 @@
       line-height: 71px;
       font-weight: 300;
       margin: 0;
+      font-family: "TGHaidoGrotesk-Light", Arial, sans-serif;
     }
 
     &--description {
@@ -54,6 +57,7 @@
       line-height: 28px;
       font-weight: 400;
       margin: 0;
+      font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
     }
   }
 }

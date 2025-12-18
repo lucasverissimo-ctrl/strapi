@@ -22,7 +22,7 @@
       </div>
     </div>
     <div class="hero-expanding-video__video-container" #videoWrap>
-      <video #video [attr.poster]="thumbnail" [controls]="showControls" (click)="onPlay(video)" width="640">
+      <video #video [attr.poster]="thumbnail" [controls]="showControls" (click)="onPlay(video)" width="640" style="cursor: pointer;">
         <source [src]="videoUrl" type="video/mp4" />
       </video>
     </div>

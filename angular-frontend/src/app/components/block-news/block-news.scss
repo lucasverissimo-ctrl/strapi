@@ -3,7 +3,6 @@
   background-position: center;
   padding: 31px 16px 64px;
   position: relative;
-  margin-top: 64px;
 
   &--title {
     font-size: 52px;
@@ -11,6 +10,7 @@
     color: white;
     text-align: center;
     margin: 0 0 45px;
+    font-family: "TGHaidoGrotesk-Light", Arial, sans-serif;
   }
 
   &--see-all {
@@ -22,7 +22,9 @@
     font-size: 14px;
     position: absolute;
     top: 87px;
-    right: 86px;
+    right: 50%;
+    transform: translateX(598px);
+    font-family: "TGHaidoGrotesk-Regular", Arial, sans-serif;
   }
 
   &--cards {
@@ -52,6 +54,7 @@
     margin-bottom: 10px;
     color: white;
     letter-spacing: -0.72px;
+    font-family: "TGHaidoGrotesk-Regular", Arial, sans-serif;
   }
 
   &--read-more {
@@ -62,5 +65,6 @@
     background-color: transparent;
     text-align: left;
     font-size: 14px;
+    font-family: "TGHaidoGrotesk-Regular", Arial, sans-serif;
   }
 }

@@ -3,12 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 64px 0;
 
   &--title {
     font-size: 52px;
     font-weight: 300;
-    margin-bottom: 24px;
+    margin: 0 0 24px;
     color: #001EAF;
+    font-family: "TGHaidoGrotesk-Light", Arial, sans-serif;
   }
 
   &--description {
@@ -17,6 +19,7 @@
     margin-bottom: 24px;
     text-align: center;
     max-width: 793px;
+    font-family: "Inter-Regular", Arial, sans-serif;
   }
 
   &--button {
@@ -31,5 +34,6 @@
     cursor: pointer;
     min-width: 168px;
     text-align: center;
+    font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
   }
 }

@@ -3,10 +3,13 @@ import { HeroExpandingVideo } from '@app/components/hero-expanding-video/hero-ex
 import { BlockTextAndButton } from '@app/components/block-text-and-button/block-text-and-button';
 import { BlockNews } from '@app/components/block-news/block-news';
 import { BlockDocuments } from '@app/components/block-documents/block-documents';
+import { BlockInvestorArea } from '@app/components/block-investor-area/block-investor-area';
+import { BlockPosts } from '@app/components/block-posts/block-posts';
+import { BlockSolutionsCarousel } from '@app/components/block-solutions-carousel/block-solutions-carousel';
 
 @Component({
   selector: 'app-home-mock',
-  imports: [HeroExpandingVideo, BlockTextAndButton, BlockNews, BlockDocuments],
+  imports: [HeroExpandingVideo, BlockTextAndButton, BlockNews, BlockDocuments, BlockInvestorArea, BlockPosts, BlockSolutionsCarousel],
   templateUrl: './home-mock.html',
   styleUrl: './home-mock.scss',
 })

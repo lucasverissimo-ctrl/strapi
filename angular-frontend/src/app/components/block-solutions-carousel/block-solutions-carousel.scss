@@ -1,0 +1,113 @@
+.solutions-carousel {
+  &--title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 300;
+    margin: 0 0 24px;
+    color: #001EAF;
+    font-family: "TGHaidoGrotesk-Light", Arial, sans-serif;
+  }
+
+  &--container {
+    margin: 77px auto 0;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    max-width: 1625px;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    min-height: 395px;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // &::scroll-button(left),
+    // &::scroll-button(right) {
+    //   content: '<';
+    //   background-color: #001EAF;
+    //   border: none;
+    //   color: white;
+    //   width: 32px;
+    //   height: 32px;
+    //   position: fixed;
+    //   position-anchor: --carousel;
+    //   position-area: top center;
+    //   translate: -100% -21px;
+    //   cursor: pointer;
+    // }
+
+    // &::scroll-button(right) {
+    //   content: '>';
+    //   translate: 100% -21px;
+    // }
+
+    &::scroll-button(left):disabled,
+    &::scroll-button(right):disabled {
+      background-color: #88AAFF;
+      color: #4571FF;
+    }
+  }
+
+  &--card {
+    scroll-snap-align: center;
+    width: 501px;
+    min-width: 501px;
+    height: 334px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &--card-img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+.selected {
+  width: 591px;
+  min-width: 591px;
+  height: 394px;
+  filter: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: top center;
+  translate: 0 -21px;
+}
+
+.carousel-btn {
+  content: '<';
+  background-color: #001EAF;
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.carousel-btn.right {
+  content: '>';
+}
+
+.carousel-btn:disabled {
+  background-color: #88AAFF;
+  color: #4571FF;
+  cursor: auto;
+}

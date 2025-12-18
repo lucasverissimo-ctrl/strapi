@@ -29,6 +29,7 @@ $header-height: 42px;
     cursor: pointer;
     font-size: 16px;
     padding: 0;
+    font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
   }
 }
 
@@ -49,11 +50,13 @@ $header-height: 42px;
   &__links {
     display: flex;
     gap: 19px;
+    font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
   }
 
   &__locale {
     display: flex;
     gap: 58px;
+    font-family: "Inter-Regular", Arial, sans-serif;
   }
 
   &-text {

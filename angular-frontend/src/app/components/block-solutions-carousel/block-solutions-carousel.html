@@ -1,0 +1,19 @@
+<div class="solutions-carousel">
+  <h2 class="solutions-carousel--title">Explore our assets/solutions</h2>
+  <div class="carousel-btn-container">
+    <button class="carousel-btn left" (click)="onPrev()" [disabled]="selectedIndex <= 1">‹</button>
+    <span>{{`${selectedIndex} de ${slides.length - 2}`}}</span>
+    <button class="carousel-btn right" (click)="onNext()" [disabled]="selectedIndex >= slides.length - 2">›</button>
+  </div>
+  <div #scroller class="solutions-carousel--container">
+    @for (slide of slides; track $index) {
+      <div [class]="`solutions-carousel--card${selectedIndex === $index ? ' selected' : ''}`">
+        <img
+          class="solutions-carousel--card-img"
+          [src]="slide"
+          alt="Carousel post"
+        />
+      </div>
+    }
+  </div>
+</div>

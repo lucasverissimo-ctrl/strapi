@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'Roboto';
-  src: url('assets/fonts/Roboto-Regular.ttf') format('truetype');
+  src: url('assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,39 @@
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url('assets/fonts/Roboto-Light.ttf') format('truetype');
+  src: url('assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TGHaidoGrotesk-Thin';
+  src: url('assets/fonts/patria/TGHaidoGrotesk-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TGHaidoGrotesk-Light';
+  src: url('assets/fonts/patria/TGHaidoGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TGHaidoGrotesk-Medium';
+  src: url('assets/fonts/patria/TGHaidoGrotesk-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('assets/fonts/patria/Inter-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -17,7 +49,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
   background-color: white;
 }
 

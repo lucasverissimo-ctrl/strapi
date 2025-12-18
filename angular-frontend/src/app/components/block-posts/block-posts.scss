@@ -1,0 +1,43 @@
+.posts {
+  &-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 32px 32px;
+  }
+
+  &-instagram-container {
+    max-width: 1196px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &-instagram-id {
+    font-size: 24px;
+    line-height: 40px;
+    color: #0D0D38;
+    font-family: "TGHaidoGrotesk-Medium", Arial, sans-serif;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    &-item {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
